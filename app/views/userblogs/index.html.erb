@@ -1,0 +1,31 @@
+<h1>Listing userblogs for <%=@user.name %> </h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  
+    <th>Userblog_id</th>
+    <th>User_id</th>
+    <th></th>
+  </tr>
+
+<% @userblogs.each do |userblog| %>
+  <tr>
+    <td><%= userblog.title %></td>
+    <td><%= userblog.description %></td>
+    <td><%= userblog.id %></td>
+    <td><%= userblog.user_id %> </td>
+     
+    <td><%= link_to 'Show', user_userblog_path(@user.id,userblog.id)  %> </td> 
+    <td><%= link_to 'Edit', edit_user_userblog_path(@user.id, userblog.id)  %>  </td>   
+    <td><%= link_to 'Destroy', user_userblog_path(@user.id, userblog.id), :method => :delete, data: { confirm: 'Are you sure?' } %> </td> 
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Userblog', new_user_userblog_path %> |
+<%= link_to 'See User Information', user_path(@user.id) %>
+

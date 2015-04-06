@@ -1,0 +1,15 @@
+Blog App
+
+Myblog_userblogs_controller.rb    http://pastebin.com/PVc5iKqJ
+
+userblogs_form.html.haml  http://pastebin.com/JFDTnM0a
+
+userblogs_edit.html.haml  http://pastebin.com/1by5mm1T
+
+userblogs_new.html.haml   http://pastebin.com/rzg5Z5x4
+
+userblogs_index.html.erb  http://pastebin.com/Efj9Uha8
+
+models_userblog.rb   http://pastebin.com/i8ydMeFk
+
+myblog_application.html.haml  http://pastebin.com/365cCGP0

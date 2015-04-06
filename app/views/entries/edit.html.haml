@@ -1,0 +1,7 @@
+%h2 Edit the following entry information for #{@entry.userblog.title} 
+
+= form_tag userblog_entry_path(@entry.userblog.id, @entry.id), :method => :put do
+
+  = render :partial => 'form'      
+  = hidden_field :entry, :userblog_id, value: @entry.userblog.id 
+  = submit_tag 'Save Changes'

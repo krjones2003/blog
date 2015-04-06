@@ -1,0 +1,28 @@
+<h1>Listing entries for <%=@userblog.user.name %>, Blog Title:  <%=@userblog.title %>   </h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+   
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entries.each do |entry| %>
+  <tr>
+    <td><%= entry.title %></td>
+    <td><%= entry.content %></td>
+    
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
+    <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entry', new_userblog_entry_path %> |
+<%= link_to 'Back To User Blogs', user_userblogs_path(@userblog.user.id) %> 
