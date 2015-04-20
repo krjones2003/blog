@@ -18,6 +18,6 @@
 
 <%= link_to 'Edit', edit_user_userblog_path(@user.id, @userblog.id) %> |
 <%= link_to 'Back', user_userblogs_path(@userblog.user_id) %> |
+<%= link_to 'See Blog Entries', userblog_entries_path(@user.id, @userblog.id) %> 
 
-<%= link_to 'See Blog Entries', userblog_entries_path(@userblog.id) %> 
 

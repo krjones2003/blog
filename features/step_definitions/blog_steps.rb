@@ -1,3 +1,4 @@
+# Second step 
 # When I create an entry with title my entry 
 When  /^I create an entry with title (.*)$/  do |title|
 	#  title       :string(255)

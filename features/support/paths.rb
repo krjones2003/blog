@@ -15,8 +15,7 @@ module NavigationHelpers
 
     when /^the home\s?page$/
       '/'
-
-     #April 2013 
+ 
     when /^the entry page/
       '/entries'   
 

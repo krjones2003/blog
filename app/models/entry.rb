@@ -12,7 +12,7 @@
 
 class Entry < ActiveRecord::Base
   belongs_to :userblog
-  attr_accessible :content, :title, :userblog_id, :userblog
+  attr_accessible :content, :title, :userblog_id
   
   validates :title, :presence => true 
 

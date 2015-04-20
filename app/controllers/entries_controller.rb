@@ -1,8 +1,11 @@
 class EntriesController < ApplicationController
  
   def index
+    #raise params.to_yaml
+
     @entries = Entry.find_all_by_userblog_id(params[:userblog_id])
     @userblog = Userblog.find(params[:userblog_id]) 
+    
   end
 
   def show

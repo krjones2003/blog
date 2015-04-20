@@ -103,3 +103,1142 @@ Processing by UserblogsController#index as HTML
   [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
   Rendered userblogs/index.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 39.8ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2015-04-08 20:09:10 -0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 13.0ms (Views: 10.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-04-08 20:09:13 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8.6ms (Views: 4.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 20:09:17 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.5ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18.6ms (Views: 3.5ms | ActiveRecord: 0.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-08 20:29:03 -0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27.0ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-04-08 20:29:15 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13.0ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 20:29:30 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 15.9ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 20:32:05 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.3ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16.8ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 20:33:33 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 16.1ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-08 20:35:45 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/show.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 105.5ms (Views: 103.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/userblogs/1/edit" for 127.0.0.1 at 2015-04-08 20:36:26 -0300
+Processing by UserblogsController#edit as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/_form.html.haml (1.0ms)
+  Rendered userblogs/edit.html.haml within layouts/application (45.3ms)
+Completed 200 OK in 51.3ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 20:38:44 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.3ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14.9ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/userblogs/new" for 127.0.0.1 at 2015-04-08 21:22:34 -0300
+Processing by UserblogsController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/_form.html.haml (0.6ms)
+  Rendered userblogs/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 14.6ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 21:23:00 -0300
+Processing by UserblogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2QL76YR+rOMXnQJyQp5bnBYcc8K/J4yrA7DiajKIVRs=", "userblog"=>{"title"=>"Haml Notes", "description"=>"haml tutorial", "user_id"=>"1"}, "commit"=>"Save Changes", "user_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (149.8ms)[0m  INSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 09 Apr 2015 00:23:00 UTC +00:00], ["description", "haml tutorial"], ["title", "Haml Notes"], ["updated_at", Thu, 09 Apr 2015 00:23:00 UTC +00:00], ["user_id", 1]]
+  [1m[36m (47.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/userblogs/2
+Completed 302 Found in 211.3ms (ActiveRecord: 196.9ms)
+
+
+Started GET "/users/1/userblogs/2" for 127.0.0.1 at 2015-04-08 21:23:01 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"2"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3.5ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 21:23:05 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16.7ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-08 21:23:17 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.4ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 32.6ms (Views: 23.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-18 20:12:41 -0300
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 69.5ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:12:42 -0300
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/images/bg2.gif" for 127.0.0.1 at 2015-04-18 20:12:42 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/bg2.gif"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-18 20:42:44 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1.5ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:42:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/bg2.gif" for 127.0.0.1 at 2015-04-18 20:42:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/bg2.gif"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.2ms)
+
+
+Started GET "/users/1/usesblogs/1/entries" for 127.0.0.1 at 2015-04-18 20:43:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/1/usesblogs/1/entries"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1/usesblog/1/entries" for 127.0.0.1 at 2015-04-18 20:43:10 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/1/usesblog/1/entries"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/1/usesblogs" for 127.0.0.1 at 2015-04-18 20:43:18 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/1/usesblogs"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/users/1/usesblog" for 127.0.0.1 at 2015-04-18 20:43:23 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/1/usesblog"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/users/1/" for 127.0.0.1 at 2015-04-18 20:43:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 82.2ms (Views: 11.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:43:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-18 20:43:34 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 19.4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:43:35 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-18 20:43:49 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.2ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (85.5ms)
+Completed 200 OK in 108.2ms (Views: 105.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:43:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-18 20:43:54 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" = 1[0m
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered entries/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 67.1ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:43:54 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-18 20:45:11 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" = 1
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered entries/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 15.8ms (Views: 4.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 20:45:11 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/2/userblogs" for 127.0.0.1 at 2015-04-18 21:08:08 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 2[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered userblogs/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8.0ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:08:08 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-18 21:08:38 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17.3ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:08:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/2/userblogs" for 127.0.0.1 at 2015-04-18 21:09:09 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 2[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered userblogs/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13.1ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:09:10 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-18 21:24:28 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19.0ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:24:28 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/" for 127.0.0.1 at 2015-04-18 21:24:47 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.2ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 12.6ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:24:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1/entries" for 127.0.0.1 at 2015-04-18 21:26:17 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/1/userblogs/1/entries"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-18 21:26:25 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" = 1
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered entries/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 22.0ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-18 21:26:25 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-04-18 21:55:01 -0300
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" IS NULL[0m
+Completed 404 Not Found in 3.3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Userblog without an ID):
+  app/controllers/entries_controller.rb:5:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-04-20 15:41:20 -0300
+Processing by EntriesController#index as HTML
+  Rendered entries/index.html.erb within layouts/application (32.5ms)
+Completed 500 Internal Server Error in 34.2ms
+
+ActionView::Template::Error (undefined method `user' for nil:NilClass):
+    1: <h1>Listing entries for <%=@userblog.user.name %>, Blog Title:  <%=@userblog.title %>   </h1>
+    2: 
+    3: <table>
+    4:   <tr>
+  app/views/entries/index.html.erb:1:in `_app_views_entries_index_html_erb__827586951__626610378'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-04-20 15:52:55 -0300
+Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2015-04-20 15:56:12 -0300
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = 1 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 32.5ms
+
+ActionController::RoutingError (No route matches {:controller=>"entries"}):
+  app/views/entries/show.html.erb:20:in `_app_views_entries_show_html_erb___440441156__623922858'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/entries/" for 127.0.0.1 at 2015-04-20 15:56:28 -0300
+Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/1/entries/" for 127.0.0.1 at 2015-04-20 15:57:12 -0300
+
+ActionController::RoutingError (No route matches [GET] "/1/entries"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/userblogs" for 127.0.0.1 at 2015-04-20 15:57:28 -0300
+Processing by UserblogsController#index as HTML
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" IS NULL
+Completed 404 Not Found in 11.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/userblogs_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/userblog/1" for 127.0.0.1 at 2015-04-20 15:57:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/userblog/1"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/userblogs/1" for 127.0.0.1 at 2015-04-20 15:58:07 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 2.5ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/userblogs_controller.rb:13:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-20 15:58:19 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries", "userblog_id"=>"1"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-04-20 16:01:31 -0300
+Processing by EntriesController#index as HTML
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/usaers" for 127.0.0.1 at 2015-04-20 16:04:46 -0300
+
+ActionController::RoutingError (No route matches [GET] "/usaers"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.16) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/saasbook/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-20 16:04:51 -0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 47.6ms (Views: 41.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:04:51 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/alluserblogs" for 127.0.0.1 at 2015-04-20 16:06:00 -0300
+Processing by AlluserblogsController#index as HTML
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" [0m
+  Rendered alluserblogs/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 51.2ms (Views: 48.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:06:01 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-04-20 16:06:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6.5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:06:06 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-04-20 16:06:30 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9.4ms (Views: 6.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:06:30 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-20 16:06:31 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10.5ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:06:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-20 16:12:14 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 24.6ms
+
+ActionView::Template::Error (undefined local variable or method `userblog' for #<#<Class:0xb5d823a8>:0xb568148c>):
+    29: <%= link_to 'New Userblog', new_user_userblog_path %> |
+    30: <%= link_to 'See User Information', user_path(@user.id)  %> |
+    31: 
+    32: <%= link_to 'New Entry', entries_path(userblog.id) %>
+  app/views/userblogs/index.html.erb:32:in `_app_views_userblogs_index_html_erb___584253024__625736938'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-20 16:13:14 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10.5ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:13:14 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:13:21 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 7.7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:13:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-20 16:13:34 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries", "userblog_id"=>"1"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-04-20 16:14:12 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3.8ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:14:12 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-20 16:14:16 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 10.6ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:14:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:14:19 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8.4ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:14:19 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-20 16:14:34 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries", "userblog_id"=>"1"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:16:42 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12.4ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:16:42 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries.1" for 127.0.0.1 at 2015-04-20 16:16:44 -0300
+Processing by EntriesController#index as 
+Completed 500 Internal Server Error in 0.2ms
+
+RuntimeError ({"action"=>"index", "controller"=>"entries", "format"=>"1"}):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:17:28 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16.6ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:17:28 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries.1" for 127.0.0.1 at 2015-04-20 16:17:30 -0300
+Processing by EntriesController#index as 
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" IS NULL[0m
+Completed 404 Not Found in 3.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Userblog without an ID):
+  app/controllers/entries_controller.rb:6:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:20:30 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 47.1ms
+
+ActionView::Template::Error (undefined method `gsub' for nil:NilClass):
+    19: <%= link_to 'Edit', edit_user_userblog_path(@user.id, @userblog.id) %> |
+    20: <%= link_to 'Back', user_userblogs_path(@userblog.user_id) %> |
+    21: 
+    22: <%= link_to 'See Blog Entries', entries_path(@user.id, @userblog.id) %> 
+  app/views/userblogs/show.html.erb:22:in `_app_views_userblogs_show_html_erb___623629070__622460428'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/users/1/userblogs" for 127.0.0.1 at 2015-04-20 16:21:53 -0300
+Processing by UserblogsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."user_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered userblogs/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17.1ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:21:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:21:55 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 9.6ms
+
+ActionView::Template::Error (undefined method `gsub' for nil:NilClass):
+    19: <%= link_to 'Edit', edit_user_userblog_path(@user.id, @userblog.id) %> |
+    20: <%= link_to 'Back', user_userblogs_path(@userblog.user_id) %> |
+    21: 
+    22: <%= link_to 'See Blog Entries', entries_path(@user.id, @userblog.id) %> 
+  app/views/userblogs/show.html.erb:22:in `_app_views_userblogs_show_html_erb___623629070__622460428'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:23:00 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 7.5ms
+
+ActionView::Template::Error (undefined method `gsub' for nil:NilClass):
+    19: <%= link_to 'Edit', edit_user_userblog_path(@user.id, @userblog.id) %> |
+    20: <%= link_to 'Back', user_userblogs_path(@userblog.user_id) %> |
+    21: 
+    22: <%= link_to 'See Blog Entries', entries_path(@user.id, @userblog.id) %> 
+  app/views/userblogs/show.html.erb:22:in `_app_views_userblogs_show_html_erb___623629070__622460428'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:23:45 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered userblogs/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 12.6ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:23:45 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:39:16 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5.6ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:39:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries.1" for 127.0.0.1 at 2015-04-20 16:39:17 -0300
+Processing by EntriesController#index as 
+  Parameters: {"userblog_id"=>"1"}
+Completed 500 Internal Server Error in 1.6ms
+
+RuntimeError (--- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+action: index
+controller: entries
+userblog_id: '1'
+format: '1'
+):
+  app/controllers/entries_controller.rb:4:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/userblogs/1/" for 127.0.0.1 at 2015-04-20 16:39:59 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 8.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/userblogs_controller.rb:13:in `show'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/users/1/userblogs/1" for 127.0.0.1 at 2015-04-20 16:40:04 -0300
+Processing by UserblogsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered userblogs/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20.1ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:40:04 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/userblogs/1/entries.1" for 127.0.0.1 at 2015-04-20 16:40:06 -0300
+Processing by EntriesController#index as 
+  Parameters: {"userblog_id"=>"1"}
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" = 1[0m
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered entries/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12.5ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 16:40:06 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/entries/1" for 127.0.0.1 at 2015-04-20 16:40:24 -0300
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = 1 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 10.2ms
+
+ActionController::RoutingError (No route matches {:controller=>"entries"}):
+  app/views/entries/show.html.erb:20:in `_app_views_entries_show_html_erb___440441156__623922858'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+Connecting to database specified by database.yml
