@@ -11,10 +11,12 @@ require 'spec_helper'
 describe EntriesController do 
 	describe 'create an entry' do
 		it 'creates an entry by calling the model method new' do
-			
-			entry = mock_model(Entry).as_null_object
+			Entry.stub(:save)
 
-			Entry.should_receive(:new).with("title" => 'my title').and_return(entry)
+			#entry = mock_model(Entry).as_null_object
+
+
+			Entry.should_receive(:new).with("title" => 'my title')  #.and_return(entry)
 			
 			post  'create', :entry => {:title => 'my title'}
 		end

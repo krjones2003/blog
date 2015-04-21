@@ -1242,3 +1242,49 @@ ActionController::RoutingError (No route matches {:controller=>"entries"}):
 
   Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/entries.1" for 127.0.0.1 at 2015-04-20 19:26:19 -0300
+Processing by EntriesController#index as 
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" IS NULL
+Completed 404 Not Found in 4.8ms
+
+ActiveRecord::RecordNotFound (Couldn't find Userblog without an ID):
+  app/controllers/entries_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2015-04-20 19:26:22 -0300
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (1.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" IS NULL[0m
+Completed 404 Not Found in 2.4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Userblog without an ID):
+  app/controllers/entries_controller.rb:7:in `index'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/userblogs/1/entries" for 127.0.0.1 at 2015-04-20 20:24:49 -0300
+Processing by EntriesController#index as HTML
+  Parameters: {"userblog_id"=>"1"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."userblog_id" = 1
+  [1m[36mUserblog Load (0.2ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" WHERE "userblogs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered entries/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 71.0ms (Views: 42.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-20 20:24:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
