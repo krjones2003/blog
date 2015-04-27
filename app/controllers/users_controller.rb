@@ -26,7 +26,8 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     @user.save
-    redirect_to @user, notice: 'User was successfully created.' 
+    
+    redirect_to users_path , notice: 'User was successfully created.' 
   
   end
 

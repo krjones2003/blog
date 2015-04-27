@@ -340,3 +340,583 @@ Connecting to database specified by database.yml
   [1m[35mSQL (1.4ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", "my content"], ["created_at", Mon, 20 Apr 2015 23:44:02 UTC +00:00], ["title", "'my entry'"], ["updated_at", Mon, 20 Apr 2015 23:44:02 UTC +00:00], ["userblog_id", 1]]
   [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 500 Internal Server Error in 0.3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 404 Not Found in 0.5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 404 Not Found in 0.4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.5ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 404 Not Found in 0.6ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 500 Internal Server Error in 0.3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 404 Not Found in 0.5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 0.2ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 500 Internal Server Error in 66.1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+Completed 404 Not Found in 2.5ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 404 Not Found in 1.0ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (59.7ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (28.6ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Fri, 24 Apr 2015 23:30:48 UTC +00:00], ["title", "my title"], ["updated_at", Fri, 24 Apr 2015 23:30:48 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 404 Not Found in 112.8ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title", "userblog_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Fri, 24 Apr 2015 23:31:47 UTC +00:00], ["title", "my title"], ["updated_at", Fri, 24 Apr 2015 23:31:47 UTC +00:00], ["userblog_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 404 Not Found in 44.2ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Fri, 24 Apr 2015 23:34:11 UTC +00:00], ["title", "my title"], ["updated_at", Fri, 24 Apr 2015 23:34:11 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/userblogs/1/entries
+Completed 302 Found in 55.7ms (ActiveRecord: 1.3ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "entries" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (3.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+Completed 500 Internal Server Error in 0.3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (1.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 404 Not Found in 129.9ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+Completed 500 Internal Server Error in 0.2ms
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 3.3ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+Completed 500 Internal Server Error in 2.4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+Completed 500 Internal Server Error in 2.4ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.2ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+  Parameters: {"title"=>"my title"}
+Completed 500 Internal Server Error in 3.0ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.3ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (49.7ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:08:02 UTC +00:00], ["title", "my title"], ["updated_at", Sat, 25 Apr 2015 00:08:02 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/userblogs/1/entries
+Completed 302 Found in 87.4ms (ActiveRecord: 15.8ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "entries" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.2ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:12:12 UTC +00:00], ["title", "my title"], ["updated_at", Sat, 25 Apr 2015 00:12:12 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/userblogs/1/entries
+Completed 302 Found in 39.7ms (ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "entries" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by EntriesController#create as HTML
+Completed 500 Internal Server Error in 0.2ms
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.8ms)[0m  SELECT COUNT(*) FROM "entries" 
+Processing by EntriesController#create as HTML
+  Parameters: {"entry"=>{"title"=>"my title"}, "userblog_id"=>"1"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'my title' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:22:07 UTC +00:00], ["title", "my title"], ["updated_at", Sat, 25 Apr 2015 00:22:07 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/userblogs/1/entries
+Completed 302 Found in 184.5ms (ActiveRecord: 2.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "entries" [0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserblog Load (8.0ms)[0m  SELECT "userblogs".* FROM "userblogs" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (29.7ms)[0m  INSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["userblog_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (19.0ms)[0m  UPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 00:30:30.258466' WHERE "entries"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 00:30:30 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserblog Load (0.9ms)[0m  SELECT "userblogs".* FROM "userblogs" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:31:37 UTC +00:00], ["userblog_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 00:31:37.264352' WHERE "entries"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.3ms)[0m  [1mINSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 00:32:12.266771' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUserblog Load (0.1ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" [0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 00:32:12 UTC +00:00], ["userblog_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserblog Load (0.1ms)[0m  SELECT "userblogs".* FROM "userblogs" 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (23.0ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:36:24 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 00:36:24 UTC +00:00], ["userblog_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 25 Apr 2015 00:36:25 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 00:36:25 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:36:25 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:36:25 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 00:36:25.013493' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.4ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.2ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserblog Load (0.3ms)[0m  [1mSELECT "userblogs".* FROM "userblogs" [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (33.9ms)[0m  [1mINSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 00:37:56.828789' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", "bbbb"], ["created_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 00:37:56 UTC +00:00], ["userblog_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (167.4ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (8.2ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", "bbbb"], ["created_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["userblog_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 01:18:35.122669' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.2ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 01:18:35 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (39.5ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", "bbbb"], ["created_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["userblog_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" IS NULL AND "entries"."userblog_id" = 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mEntry Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rspec tutorial' AND "entries"."userblog_id" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)  [["content", nil], ["created_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["title", "Rspec tutorial"], ["updated_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["userblog_id", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "userblogs" ("created_at", "description", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["description", nil], ["title", "All about Rails"], ["updated_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.1ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."userblog_id" IS NULL) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("content", "created_at", "title", "updated_at", "userblog_id") VALUES (?, ?, ?, ?, ?)[0m  [["content", nil], ["created_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["title", "Rails Associations"], ["updated_at", Sat, 25 Apr 2015 01:38:46 UTC +00:00], ["userblog_id", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mEntry Exists (0.2ms)[0m  SELECT 1 AS one FROM "entries" WHERE ("entries"."title" = 'Rails Associations' AND "entries"."id" != 1 AND "entries"."userblog_id" = 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "userblog_id" = 1, "updated_at" = '2015-04-25 01:38:46.831418' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

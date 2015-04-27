@@ -11,7 +11,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :location
+  attr_accessible :email, :name, :location, :userblog_id
   has_many :userblogs
   has_many :follow
   

@@ -44,11 +44,12 @@ describe Entry do
 
 		it 'an entry must have a title' do
 
-			myblog = Userblog.all[0]
+			#myblog = Userblog.all[0]
 			
 			# this is like entering a userblog_id, msking s refence to myblog 
-		     myentry = Entry.create(:userblog => myblog)
+		     #myentry = Entry.create(:userblog => myblog)
 
+		         myentry = Entry.create(:userblog_id => "1")
 			#this is the test
 			myentry.should_not be_valid
 
@@ -56,12 +57,12 @@ describe Entry do
 
 		it 'the entry title must be unique relative to its blog' do 
 
-			myblog = Userblog.all[0]
+			# myblog = Userblog.all[0]
 			
-			entry = Entry.create(:userblog => myblog, :title => 'Rails Associations', :content => 'bbbb')
+			entry = Entry.create(:userblog_id => "1", :title => 'Rails Associations', :content => 'bbbb')
 
 			# we should not allow this to be valid, we already have an entry with this title for blog[0]
-			otherentry = Entry.create(:userblog => myblog, :title => 'Rails Associations', :content => 'aaaa')
+			otherentry = Entry.create(:userblog_id => "1", :title => 'Rails Associations', :content => 'aaaa')
 
 			otherentry.should_not be_valid
 

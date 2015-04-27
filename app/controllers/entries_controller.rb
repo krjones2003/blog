@@ -21,9 +21,10 @@ class EntriesController < ApplicationController
   end
 
   def create
+    #raise params.to_yaml 
     @entry = Entry.new(params[:entry])
     @entry.save
-    redirect_to userblog_entries_path, notice: 'Entry was successfully created.' 
+    redirect_to userblog_entries_path(params[:userblog_id]), notice: 'Entry was successfully created.' 
   end
 
 
